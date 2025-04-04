@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Walid Charoune</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cv-container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+
+    .left-column {
+      width: 35%;
+      padding: 1rem;
+      border-right: 2px solid #eee;
+    }
+
+    .profile-pic {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 6px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    .title-roles {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #555;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-weight: 600;
+      margin: 1.5rem 0 0.5rem;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #ccc;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .info-list {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .info-list li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .right-column {
+      width: 65%;
+      padding: 1rem 2rem;
+    }
+
+    .name {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .short-bio {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .academics,
+    .experience,
+    .skills,
+    .references {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-header {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      border-bottom: 2px solid #eee;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .section-content p,
+    .section-content li {
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .skill-item {
+      background: #007BFF;
+      color: #fff;
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .cv-container {
+        flex-direction: column;
+      }
+      .left-column, .right-column {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #eee;
+      }
+      .right-column {
+        border-bottom: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-container">
+
+  <div class="left-column">
+
+    <img src="png-svg/logo2COPY.png" alt="Photo de Walid" class="profile-pic" />
+
+    <div class="title-roles">
+      Étudiant / Futur Ingénieur Logiciel
+    </div>
+
+    <div>
+      <div class="section-title">Coordonnées</div>
+      <ul class="info-list">
+        <li><strong>Adresse :</strong> Laayoune, Morocco</li>
+        <li><strong>Téléphone :</strong> 0679690226</li>
+        <li><strong>Email :</strong> <a href="mailto:walid.charoune@gmail.com">walid.charoune@gmail.com</a></li>
+        <li><strong>Site Web :</strong> <a href="myprofile.html" target="_blank">myprofile.html</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-title">Centres d’intérêt</div>
+      <ul class="info-list">
+        <li>Échecs</li>
+        <li>Apprentissage</li>
+        <li>Découvertes</li>
+        <li>Technologie & Développement</li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-column">
+    <div class="name">Walid Charoune</div>
+    <div class="short-bio">
+      Bonjour ! Je m'appelle Walid et je suis un futur ingénieur logiciel. 
+      J'ai une grande passion pour les échecs, l'apprentissage de nouvelles choses 
+      et la découverte des dernières avancées en technologie et développement. 
+      J'aime explorer des idées innovantes et enrichir continuellement mes connaissances. 
+      Je crois en la positivité et aux bonnes relations, et je peux fièrement dire : 
+      “I have no enemies.”
+    </div>
+    <div class="academics">
+      <div class="section-header">Academics</div>
+      <div class="section-content">
+        <p><strong>EST Laayoune (UIZ)</strong> - En cours de formation en développement logiciel</p>
+      </div>
+    </div>
+    <div class="skills">
+      <div class="section-header">Compétences</div>
+      <div class="section-content">
+        <div class="skills-list">
+          <span class="skill-item">Python</span>
+          <span class="skill-item">HTML</span>
+          <span class="skill-item">CSS</span>
+          <span class="skill-item">C</span>
+          <span class="skill-item">Pascal</span>
+        </div>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="section-header">Expérience Professionnelle</div>
+      <div class="section-content">
+        <p>Aucune expérience professionnelle pour le moment. 
+        (À la recherche d'opportunités pour acquérir de l'expérience pratique.)</p>
+      </div>
+    </div>
+    <div class="references">
+      <div class="section-header">Références</div>
+      <div class="section-content">
+        <p>Disponible sur demande</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

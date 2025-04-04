@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework Tracker</title>
+  <style>
+    body {
+      background-color: #313a47;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: rgb(204, 128, 41);
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 250px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgb(204, 128, 41);
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    .task {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px auto;
+      width: 300px;
+      padding: 10px;
+      background-color: rgba(204, 128, 41, 0.1);
+      border-radius: 5px;
+    }
+    .completed span {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .completed button {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1>Homework Tracker</h1>
+  <input type="text" id="taskInput" placeholder="Add new homework">
+  <button onclick="addTask()">Add</button>
+  <ul id="taskList"></ul>
+  
+  <script>
+    function addTask() {
+      let taskInput = document.getElementById("taskInput");
+      let taskText = taskInput.value.trim();
+      if (taskText === "") return;
+
+      let li = document.createElement("li");
+      li.className = "task";
+      li.innerHTML = `<span>${taskText}</span> <button onclick="toggleTask(this)">Done</button>`;
+      document.getElementById("taskList").appendChild(li);
+      taskInput.value = "";
+    }
+
+    function toggleTask(button) {
+      let task = button.parentElement;
+      task.classList.toggle("completed");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+body {
+    background-color:#2b3849;
+}
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+hr{
+    opacity: 10%;
+}
+.nav ul{
+    display:flex;
+    list-style-type: none;
+    gap:2rem;
+    font-size: 1.5rem;
+
+}
+.nav a{
+    text-decoration: none;
+    font-family:"lora";
+    color :white;
+}
+.nav a:hover{
+    color :rgb(136, 241, 241);
+}
+.main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;  
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+.mainSub{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    }
+.h11{
+    color:whitesmoke;
+    font-size: 3rem;
+}
+.h12{
+    color:rgb(204, 128, 41);
+    font-size: 2rem;
+}
+.Contact{
+    width: 10rem;
+    height:auto;
+    text-align: center;
+    background-color:rgb(204, 128, 41);
+    color:whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 1rem;
+}
+.AproposSub{
+    font-family:"lora";
+    display:flex;
+    justify-content: space-between;
+    align-items: center;  
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 5px;
+    font-size: 2rem;
+}
+.img2{
+    width:30rem;
+    height:35rem;
+    margin: 5rem;
+}
+.Hsub{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}   
+.h112{
+    margin: 0.5rem  ;
+    color:rgb(204, 128, 41);
+}
+.p1{
+    color:whitesmoke;
+    text-align: justify;
+    font-size:x-large;
+}
+.H11P{
+    margin: 0.5rem  ;
+    color:rgb(204, 128, 41);
+}
+.H12P{
+    margin: 0.5rem  ;
+    color:whitesmoke;
+}
+.HC{
+    font-family:"lora";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    font-size: 2rem;
+}
+.code{
+    width: 13rem;
+    height:5rem;
+    background-color:rgb(204, 128, 41);
+    color:whitesmoke;
+    border-radius: 20px;
+    text-decoration: none;
+     margin: 1.5rem;
+    padding: 1.5rem;
+    font-family:"lora";
+    font-size: x-large;
+    
+}
+.p2{ 
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    color:whitesmoke;
+    text-align: justify;
+    font-family:"lora";
+    font-size: x-large;
+}
+.span1{
+    color: rgb(204, 128, 41); 
+}
+.ul1{
+   display:flex;
+   list-style-type: none;
+   border-radius: 60px;
+   padding: 2.5rem;
+   width: 35rem;
+   height: 25rem;
+}
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  .contactTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+  }
+  .contact h3,
+  .contact a {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+  .emailAndPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+  }
+  
+  .socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .socialMedia a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgba(57, 62, 70, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+  }
+  .socialMedia img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  footer {
+    color: #eeeeee;
+    padding: 2rem;  
+    text-align: center;
+  }
+  
+  @media (max-width: 1023px) {
+    header {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .heroImg {
+      width: 400px;
+    }
+    .name,
+    .title {
+      font-size: 2rem;
+    }
+    .arrow {
+      display: none;
+    }
+    .aboutMe {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 2rem;
+    }
+    .textContainer {
+      align-items: center;
+      margin: 0rem 5rem;
+      gap: 1rem;
+    }
+    .aboutName,
+    .aboutTitle {
+      font-size: 2rem;
+    }
+    .light {
+      width: 60px;
+    }
+    .aboutMeImg {
+      width: 400px;
+    }
+    .works {
+      padding: 0;
+    }
+    .worksContainer {
+      padding: 5rem 0rem;
+      gap: 3rem;
+    }
+    .projectTitle {
+      margin-left: 1rem;
+    }
+    .works ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contactContainer {
+      margin: 10rem 5rem;
+      gap: 2rem;
+    }
+    .contact {
+      flex-direction: column;
+      gap: 1rem;
+      margin-right: 0;
+    }
+  }
